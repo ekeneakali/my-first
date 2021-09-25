@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">view warning</button>
+    <button id="date">click date</button>
+    <script>
+     document.getElementById('btn').addEventListener('click', function() {
+         alert('hello world am a young developer');
+     });
+     document.getElementById('date').addEventListener('mousedown', function() {
+         let n = new Date()
+         document.write(n);
+     })
+        
+    </script>
+    
+</body>
+</html>

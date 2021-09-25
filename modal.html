@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        .mystyle {
+            width: 100px;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            display: none;
+        }
+        .modal{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 10px;
+            overflow: scroll;
+            text-align:center ;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="myFunction()">OPEN MODAL</button>
+    <div id="myDiv" class="modal">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores ipsum, exercitationem eum facilis soluta ab. Vitae maxime porro incidunt.</p>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.getElementById('myDiv');
+            element.classList.toggle('mystyle');
+        }
+    </script>
+
+    
+</body>
+</html>
